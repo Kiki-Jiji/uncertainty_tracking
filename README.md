@@ -1,3 +1,3 @@
 # uncertainty_tracking
 
-https://travis-ci.com/Kiki-Jiji/uncertainty_tracking.svg?branch=master
+[![Build Status](https://travis-ci.com/Kiki-Jiji/uncertainty_tracking.svg?branch=master)](https://travis-ci.com/Kiki-Jiji/uncertainty_tracking)
