@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585846309935.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E7EAC36C",
+    "lastKnownWriteTime" : 1585846161,
+    "last_content_update" : 1585846161,
+    "path" : "~/code/cookie_consent/.travis.yml",
+    "project_path" : ".travis.yml",
+    "properties" : {
+        "cursorPosition" : "17,29",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "yaml"
+}
