@@ -1,0 +1,88 @@
+---
+title: "My Website"
+---
+
+Hello!
+
+This is an example of how to embed html, css and javascript into a rmarkdown website. The example included uses the javascript library jquery to animate a popup up that appears after 2 seconds on the homepage. You should be able to see this below.
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+  /*Cookie Consent Begin*/
+#gdprPopup {
+    background-color: rgba(20,20,20,0.8);
+    min-height: 26px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 8px 0 8px 30px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+#gdprPopup a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+#closegdprPopup {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
+#closegdprPopup:hover {
+    color: #FFF;
+}
+#gdprPopup a.gdprPopupOK {
+    background-color: #F1D600;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+}
+#gdprPopup a.gdprPopupOK:hover {
+    background-color: #E0C91F;
+}
+/*Cookie Consent End*/
+</style>
+</head>
+
+<body>
+
+<div id="main_newsletter"></div>
+
+<div id="main_footer"></div>
+
+<script>
+  $(document).ready(function(){
+      setTimeout(function () {
+          $("#gdprPopup").fadeIn(200);
+       }, 2000);
+      $("#closegdprPopup, .gdprPopupOK").click(function() {
+          $("#gdprPopup").fadeOut(200);
+      });
+  });
+</script>
+
+<div id="gdprPopup">
+<div id="closegdprPopup">x
+</div>
+    This website is using cookies. 
+<a href="#" target="_blank">More info</a>
+<a class="gdprPopupOK">That's Fine</a>
+</div>
+
+</body>
+
+</html>
